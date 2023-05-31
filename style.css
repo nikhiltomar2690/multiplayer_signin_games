@@ -25,7 +25,8 @@ html,body{
     min-height: 30vh;
   }
 #title{
-    font-size: 50px;
+    margin-top: 2%;
+    font-size: 60px;
     /* font-family: 'Rubik Puddles', cursive; */
     font-family: 'Press Start 2P', cursive;
 }
