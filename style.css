@@ -1,15 +1,21 @@
 html,body{
+    margin-top: 1%;
     background-color: #1d1c16;
     color: white;
     overflow: hidden;
-    
 }
 #signup{
     display: flex;
 }
 #home{
     margin-left: 27%;
-    width: 700px;
+    width: 770px;
+    margin-bottom: 0%;
+    position: fixed;
+}
+#loginicon{
+    width: 50px;
+    height: 50px;
 }
 .container {
     display: flex;
@@ -24,9 +30,11 @@ html,body{
     font-family: 'Press Start 2P', cursive;
 }
 #sign-btn{
+    display: flex;
+    align-items: center;
     margin-top: 30%;
-    background-color: #006cfa;
-    color: white;
+    background-color: white;
+    color: #006cfa;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     /* margin-bottom: 20%; */
@@ -38,9 +46,11 @@ html,body{
     cursor: pointer;
 }
 #sign-btn:hover{
+    display: flex;
+    align-items: center;
     margin-top: 30%;
-    background-color: white;
-    color: #006cfa;
+    background-color: #006cfa;
+    color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     /* margin-bottom: 20%; */
