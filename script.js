@@ -6,8 +6,8 @@
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
-  let googlesignin = document.getElementsByClassName('googlesign');
-  let otpsign = document.getElementsByClassName('otpsign');
+  const googlesignin = document.getElementsByClassName('googlesign')[0];
+  const otpsign = document.getElementsByClassName('otpsign');
 
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -29,14 +29,14 @@
   const provider = new GoogleAuthProvider();
   console.log(provider);
 
-  googlesignin.addEventListener("click",function(){
+  googlesignin.addEventListener('click',function(){
     signInWithPopup(auth,provider)
     .then((result)=> {
         const credential = GoogleAuthProvider.credentialFromResult(result);
         const token = credential.accessToken;
         // the signed user info
         const user = result.user;
-        alert("Welcome" + user.displaName);
+        alert("Welcome" + user.displayName);
         console.log(user);
     }).catch((error) => {
         const errorCode = error.code;
